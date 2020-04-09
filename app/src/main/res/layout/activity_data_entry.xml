@@ -25,5 +25,68 @@
             app:layout_constraintTop_toTopOf="parent"
             android:padding="10dp"
             tools:context= ".Tax register">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Tax Filing"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+            <TableRow android:layout_marginTop="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="80dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/first_name"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:hint="First Name">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="80dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/last_name"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:hint="Last Name" >
+                </com.google.android.material.textfield.TextInputEditText>
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
