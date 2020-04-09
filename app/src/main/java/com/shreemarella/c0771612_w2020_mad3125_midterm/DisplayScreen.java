@@ -2,6 +2,7 @@ package com.shreemarella.c0771612_w2020_mad3125_midterm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -45,5 +46,34 @@ public class DisplayScreen extends AppCompatActivity
         ProvincialTax=findViewById(R.id.PT);
         FederalTax=findViewById(R.id.FT);
 
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        CRACustomer c2 = (CRACustomer) extras.getParcelable("object");
+
+        Double gross = c2.getGrossIncome();
+        Double RRSP_C0 = c2.getRRSP();
+//        Double TOTALTAXINCOME = (gross-(calcualteCPP(gross)+calculateEI(gross)+calculateMaxRrsp(gross)));
+//        CPP.setText(String.format("%.2f", calcualteCPP(gross)));
+//        EI.setText(String.format("%.2f",calculateEI(gross)));
+
     }
+
+    private Double calcualteCPP(Double gross)
+    {
+        Double x;
+        Double y;
+        if(gross < 57400){
+            x = 57400 - gross;
+            y = 57400 -x;
+            x = y * 0.051;
+
+        }else
+        {
+            x = gross - 57400;
+            y = gross - x;
+            x = y * 0.051;
+        }
+
+        return x;
 }
