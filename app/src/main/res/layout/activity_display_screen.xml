@@ -81,7 +81,7 @@
                             android:textSize="20dp" />
 
                         <TextView
-                            android:id="@+id/BD"
+                            android:id="@+id/BirthD"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -111,7 +111,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:layout_weight="1"
-                            android:textAlignment="center"/>
+                            android:textAlignment="center" />
                     </TableRow>
 
                     <TableRow
@@ -132,7 +132,7 @@
                             android:textSize="20dp"/>
 
                         <TextView
-                            android:id="@+id/G"
+                            android:id="@+id/GN"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -158,7 +158,7 @@
                             android:textSize="20dp"/>
 
                         <TextView
-                            android:id="@+id/SN"
+                            android:id="@+id/SiN"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -184,7 +184,7 @@
                             android:textSize="20dp"/>
 
                         <TextView
-                            android:id="@+id/CD"
+                            android:id="@+id/CuDa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"

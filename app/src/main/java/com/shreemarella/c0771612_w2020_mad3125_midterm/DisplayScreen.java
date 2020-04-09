@@ -30,13 +30,13 @@ public class DisplayScreen extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_screen);
-        sinnumber = findViewById(R.id.SN);
+        sinnumber = findViewById(R.id.SiN);
         TotalTaxPaid = findViewById(R.id.TTPe);
         fullname = findViewById(R.id.full_name);
-        BirthDate = findViewById(R.id.BD);
+        BirthDate = findViewById(R.id.BirthD);
         Age=findViewById(R.id.age);
-        Date=findViewById(R.id.CD);
-        Gender = findViewById(R.id.G);
+        Date=findViewById(R.id.CuDa);
+        Gender = findViewById(R.id.GN);
         GrossIncome=findViewById(R.id.GI);
         CPP=findViewById(R.id.cp);
         EI=findViewById(R.id.EI);
@@ -64,7 +64,7 @@ public class DisplayScreen extends AppCompatActivity
             CFRSSP.setText(String.format("%.2f",x));
             RRSP.setText(String.format("%.2f",RRSP_C0));
         }
-        else if(calculateMaxRrsp(gross) < RRSP_C0
+        else if(calculateMaxRrsp(gross) < RRSP_C0)
         {
             double x = calculateMaxRrsp(gross) - RRSP_C0;
             CFRSSP.setText(String.format("%.2f",x));
@@ -74,7 +74,7 @@ public class DisplayScreen extends AppCompatActivity
         }
 
         TotalTaxableIncome.setText(String.format("%.2f",TOTALTAXINCOME));
-
+//USED FROM THE SLAB
         if( TOTALTAXINCOME >= 220000){
             Double pt = TOTALTAXINCOME*0.1316;
             ProvincialTax.setText(String.format("%.2f",pt));
@@ -96,9 +96,46 @@ public class DisplayScreen extends AppCompatActivity
             ProvincialTax.setText(String.format("%.2f",pt));
         }
 
+//USED FROM THE SLAB
+
+        if( TOTALTAXINCOME >= 210371.01){
+            Double ft =  TOTALTAXINCOME*0.33;
+            FederalTax.setText(String.format("%.2f",ft));
+        }else if (( TOTALTAXINCOME >= 147667.01) &&( TOTALTAXINCOME <= 210371)){
+            Double ft =  TOTALTAXINCOME*0.29;
+            FederalTax.setText(String.format("%.2f",ft));
+        }else if (( TOTALTAXINCOME >= 95259.01) &&( TOTALTAXINCOME <= 147667)){
+            Double ft =  TOTALTAXINCOME*0.26;
+            FederalTax.setText(String.format("%.2f",ft));
+        }else if (( TOTALTAXINCOME >= 47630.01) &&( TOTALTAXINCOME <= 95259)){
+            Double ft =  TOTALTAXINCOME*0.2050;
+            FederalTax.setText(String.format("%.2f",ft));
+        }else if (( TOTALTAXINCOME >= 12609.01) &&( TOTALTAXINCOME <= 47630)){
+            Double ft =  TOTALTAXINCOME*0.15;
+            FederalTax.setText(String.format("%.2f",ft));
+        }else if ( TOTALTAXINCOME <= 12069){
+            Double ft =  TOTALTAXINCOME;
+            FederalTax.setText(String.format("%.2f",ft));
+        }
+//
+//        String value1= ProvincialTax.getText().toString();
+//        Double Finalprovincial =Double.parseDouble(value1);
+//        String value2 = FederalTax.getText().toString();
+//        Double Finalfederal = Double.parseDouble(value2);
+//
+//        Double x = Finalprovincial + Finalfederal;
+//        TotalTaxPaid.setText(x.toString());
+
+        sinnumber.setText(c2.getSinNo());
+        fullname.setText(c2.getLastName().toUpperCase()+" "+c2.getFirstName());
+        BirthDate.setText(c2.getBirthdate());
+        Gender.setText(c2.getGender());
+        Age.setText(c2.getAge());
+        Date.setText(c2.getCurrentDate());
+        GrossIncome.setText(c2.getGrossIncome().toString());
+
 
     }
-
     private Double calcualteCPP(Double gross) {
         Double x;
         Double y;
