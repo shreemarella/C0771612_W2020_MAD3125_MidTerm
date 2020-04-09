@@ -43,8 +43,8 @@ public class DataEntry extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_entry);
 
-        FirstName = findViewById(R.id.first_name);
-        LastName = findViewById(R.id.last_name);
+        FirstName = findViewById(R.id.FirstName);
+        LastName = findViewById(R.id.LastName);
         txtDate = findViewById(R.id.txtDate);
         TaxDate = findViewById(R.id.taxdate);
         Age = findViewById(R.id.age);

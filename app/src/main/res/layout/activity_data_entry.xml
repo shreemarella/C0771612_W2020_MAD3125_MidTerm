@@ -24,17 +24,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:padding="10dp"
-            tools:context=".Tax register">
+            tools:context= ".Tax register">
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:text="Tax Filing"
+                    android:textSize="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
                     android:gravity="center"/>
+
                 <TableRow android:layout_marginTop="10dp">
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout2"
@@ -49,7 +53,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/first_name"
+                            android:id="@+id/FirstName"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
                             android:hint="First Name">
@@ -73,7 +77,7 @@
 
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/last_name"
+                            android:id="@+id/LastName"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
                             android:hint="Last Name" >
@@ -82,6 +86,27 @@
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
                 <TableRow android:layout_marginTop="10dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout15"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        tools:layout_editor_absoluteX="104dp"
+                        tools:layout_editor_absoluteY="80dp">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtbd"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:text="Birth Date"
+                            android:textAlignment="center">
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout5"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -95,15 +120,36 @@
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/txtDate"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:hint="Enter BirthDate"
-                            android:textAlignment="center">
-                        </com.google.android.material.textview.MaterialTextView>
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:hint=" Click To Enter BirthDate"
+                            android:textAlignment="center"
+                            tools:ignore="RtlCompat"></com.google.android.material.textview.MaterialTextView>
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
                 <TableRow android:layout_marginTop="10dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout16"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        tools:layout_editor_absoluteX="104dp"
+                        tools:layout_editor_absoluteY="80dp">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/agelbl"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:textSize="20dp"
+                            android:text="Age:"
+                            android:textAlignment="center"
+                            android:hint="AGE"/>
+                    </com.google.android.material.textfield.TextInputLayout>
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout6"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -119,8 +165,8 @@
                             android:id="@+id/age"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:textSize="20dp"
-                            android:hint="AGE"/>
+                            android:textAlignment="center"
+                            android:textSize="20dp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -129,6 +175,7 @@
                     <TextView
                         android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:textAlignment="center"
                         android:text="Gender"/>
                     <Spinner
                         android:layout_height="wrap_content"
@@ -154,7 +201,8 @@
                             android:id="@+id/sinNumber"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:hint="SIN Number">
+                            android:inputType="number"
+                            android:hint="sin number">
                         </com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -178,7 +226,7 @@
                             android:id="@+id/taxdate"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:hint="Tax Filing date"
+                            android:hint="Tax filing date"
                             android:textAlignment="center"/>
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -198,9 +246,10 @@
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/Grossincome"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:hint="Gross Income "/>
+                            android:layout_height="match_parent"
+                            android:hint="Gross income "
+                            android:inputType="numberDecimal" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </TableRow>
@@ -221,6 +270,7 @@
                             android:id="@+id/RRSP"
                             android:layout_height="match_parent"
                             android:layout_width="match_parent"
+                            android:inputType="numberDecimal"
                             android:hint="RRSP">
                         </com.google.android.material.textfield.TextInputEditText>
 
