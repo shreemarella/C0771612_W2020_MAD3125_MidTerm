@@ -17,4 +17,7 @@ References:
 
 * https://www.youtube.com/watch?v=WBbsvqSu0is
 
+* https://stackoverflow.com/questions/21148103/android-app-crashes-after-splashscreen
+
+
 
