@@ -4,6 +4,8 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
@@ -67,6 +69,31 @@ public class DataEntry extends AppCompatActivity
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
                 String myFormat = "MM-dd-yy"; //In which you need put here
                 SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+
+                txtDate.setText(sdf.format(myCalendar.getTime()));
+                if (calculateAge(myCalendar.getTimeInMillis()) > 18) {
+                    Age.setText("Age: " + Integer.toString(calculateAge(myCalendar.getTimeInMillis())));
+                    Age.setTextColor(Color.BLACK);
+                    Age.setTypeface(null, Typeface.NORMAL);
+
+
+                } else {
+                    Age.setText(" Not eligible for filing tax");
+                    Age.setTextColor(Color.RED);
+                    Age.setTypeface(null, Typeface.BOLD);
+                }
+
+                int calculateAge ( long date){
+                    java.util.Calendar dob = java.util.Calendar.getInstance();
+                    dob.setTimeInMillis(date);
+                    java.util.Calendar today = java.util.Calendar.getInstance();
+                    int age = today.get(java.util.Calendar.YEAR) - dob.get(java.util.Calendar.YEAR);
+                    if (today.get(java.util.Calendar.DAY_OF_MONTH) < dob.get(java.util.Calendar.DAY_OF_MONTH)) {
+                        age--;
+                    }
+                    return age;
+                }
 
     }
 }
