@@ -3,6 +3,7 @@ package com.shreemarella.c0771612_w2020_mad3125_midterm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -53,9 +54,25 @@ public class DisplayScreen extends AppCompatActivity
 
         Double gross = c2.getGrossIncome();
         Double RRSP_C0 = c2.getRRSP();
-//        Double TOTALTAXINCOME = (gross-(calcualteCPP(gross)+calculateEI(gross)+calculateMaxRrsp(gross)));
-//        CPP.setText(String.format("%.2f", calcualteCPP(gross)));
-//        EI.setText(String.format("%.2f",calculateEI(gross)));
+        Double TOTALTAXINCOME = (gross-(calcualteCPP(gross)+calculateEI(gross)+calculateMaxRrsp(gross)));
+        CPP.setText(String.format("%.2f", calcualteCPP(gross)));
+        EI.setText(String.format("%.2f",calculateEI(gross)));
+
+        if(calculateMaxRrsp(gross) > RRSP_C0)
+        {
+            double x = calculateMaxRrsp(gross) - RRSP_C0;
+            CFRSSP.setText(String.format("%.2f",x));
+            RRSP.setText(String.format("%.2f",RRSP_C0));
+        }
+        else if(calculateMaxRrsp(gross) < RRSP_C0
+        {
+            double x = calculateMaxRrsp(gross) - RRSP_C0;
+            CFRSSP.setText(String.format("%.2f",x));
+            CFRSSP.setTextColor(Color.RED);
+            RRSP.setText(String.format("%.2f", RRSP_C0));
+
+        }
+        
 
     }
 
