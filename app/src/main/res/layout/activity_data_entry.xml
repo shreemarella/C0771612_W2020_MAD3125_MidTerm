@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4E458"
     tools:context=".DataEntry">
 
     <androidx.core.widget.NestedScrollView
@@ -19,27 +20,28 @@
             android:layout_marginTop="1dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="1dp"
+            android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:padding="10dp"
-            tools:context= ".Tax register">
+            tools:context=".Tax register">
 
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:text="Tax Filing"
-                    android:textSize="40dp"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="Tax filing"
+                    android:textSize="40dp" />
 
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout2"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -53,10 +55,10 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/FirstName"
-                            android:layout_height="match_parent"
+                            android:id="@+id/first_name"
                             android:layout_width="match_parent"
-                            android:hint="First Name">
+                            android:layout_height="match_parent"
+                            android:hint="first name">
 
                         </com.google.android.material.textfield.TextInputEditText>
 
@@ -65,6 +67,7 @@
                 </TableRow>
 
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout3"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -77,15 +80,18 @@
 
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/LastName"
-                            android:layout_height="match_parent"
+                            android:id="@+id/last_name"
                             android:layout_width="match_parent"
-                            android:hint="Last Name" >
+                            android:layout_height="match_parent"
+                            android:hint="last name">
+
                         </com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
+
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout15"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -99,10 +105,11 @@
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/txtbd"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:text="Birth Date"
                             android:textAlignment="center">
+
                         </com.google.android.material.textview.MaterialTextView>
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -124,12 +131,15 @@
                             android:layout_height="match_parent"
                             android:gravity="left"
                             android:hint=" Click To Enter BirthDate"
-                            android:textAlignment="center"
-                            tools:ignore="RtlCompat"></com.google.android.material.textview.MaterialTextView>
+                            android:textAlignment="center">
+
+                        </com.google.android.material.textview.MaterialTextView>
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
+
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout16"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -143,13 +153,14 @@
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/agelbl"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:textSize="20dp"
-                            android:text="Age:"
+                            android:layout_height="match_parent"
+                            android:hint="AGE"
+                            android:text="AGE:"
                             android:textAlignment="center"
-                            android:hint="AGE"/>
+                            android:textSize="20dp" />
                     </com.google.android.material.textfield.TextInputLayout>
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout6"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -163,29 +174,34 @@
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/age"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:textAlignment="center"
                             android:textSize="20dp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
 
                 </TableRow>
+
                 <TableRow android:layout_marginTop="10dp">
+
                     <TextView
-                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
-                        android:textAlignment="center"
-                        android:text="Gender"/>
+                        android:layout_height="match_parent"
+                        android:text="Gender"
+                        android:textAlignment="center" />
+
                     <Spinner
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
                         android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
-                        android:entries="@array/gender"/>
+                        android:entries="@array/gender" />
                 </TableRow>
+
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout7"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -199,11 +215,10 @@
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/sinNumber"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:inputType="number"
-                            android:hint="sin number">
-                        </com.google.android.material.textfield.TextInputEditText>
+                            android:layout_height="match_parent"
+                            android:hint="sin number"
+                            android:inputType="number"></com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
@@ -227,12 +242,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="Tax filing date"
-                            android:textAlignment="center"/>
+                            android:textAlignment="center" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </TableRow>
 
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout9"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -248,6 +264,7 @@
                             android:id="@+id/Grossincome"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:drawableLeft="@mipmap/ic_dollarsymbol"
                             android:hint="Gross income "
                             android:inputType="numberDecimal" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -255,6 +272,7 @@
                 </TableRow>
 
                 <TableRow android:layout_marginTop="10dp">
+
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout4"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -268,10 +286,11 @@
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/RRSP"
-                            android:layout_height="match_parent"
                             android:layout_width="match_parent"
-                            android:inputType="numberDecimal"
-                            android:hint="RRSP">
+                            android:layout_height="match_parent"
+                            android:hint="RRSP"
+                            android:inputType="numberDecimal">
+                            
                         </com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -281,11 +300,12 @@
                 <Button
 
                     android:id="@+id/register"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:text="REGISTER"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="REGISTER" />
+
                 <Button
                     android:id="@+id/btnClear"
                     android:layout_width="match_parent"
@@ -297,8 +317,6 @@
             </TableLayout>
         </ScrollView>
     </androidx.core.widget.NestedScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
