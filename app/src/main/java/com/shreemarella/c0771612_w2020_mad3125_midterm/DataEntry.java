@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.icu.util.Calendar;
@@ -17,6 +18,8 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DataEntry extends AppCompatActivity
 {
@@ -122,12 +125,62 @@ public class DataEntry extends AppCompatActivity
 
                 }else if (RRSP.getText().toString().matches("")){
                     RRSP.setError("enter Last name");
+                } else {
+                    String value1 = GrossPay.getText().toString();
+                    Double GrossValue = Double.parseDouble(value1);
+                    String value2 = RRSP.getText().toString();
+                    Double RRSPvalue = Double.parseDouble(value2);
+
+//                    SINNumber.setText(SINNumber.getText().toString());
+//                    Intent mintent = new Intent(person_entryscreen.this, Displaying_data.class);
+//                    CRACustomer C1 = new CRACustomer(taxdate.getText().toString(),sinnumber.getText().toString(),firstname.getText().toString(), lastname.getText().toString(), txtDate.getText().toString(), Age.getText().toString(), gender.getSelectedItem().toString(), GrossValue, RRSPvalue);
+//                    mintent.putExtra("object",C1);
+//                    startActivity(mintent);
+                }
+            }
+        });
 
 
+        Clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                FirstName.setText("");
+                LastName.setText("");
+                SINNumber.setText("");
+                txtDate.setText("");
+                GrossPay.setText("");
+                RRSP.setText("");
+                Age.setText("Age");
+
+            }
+        });
 
 
     }
+
+
+    int calculateAge ( long date){
+        java.util.Calendar dob = java.util.Calendar.getInstance();
+        dob.setTimeInMillis(date);
+        java.util.Calendar today = java.util.Calendar.getInstance();
+        int age = today.get(java.util.Calendar.YEAR) - dob.get(java.util.Calendar.YEAR);
+        if (today.get(java.util.Calendar.DAY_OF_MONTH) < dob.get(java.util.Calendar.DAY_OF_MONTH)) {
+            age--;
+        }
+        return age;
+    }
+
+    private boolean isValidSin(String sinnumber) {
+        String sinValidation = "\\d{9}";
+        Pattern pattern = Pattern.compile(sinValidation);
+        Matcher matcher = pattern.matcher(sinnumber);
+        return matcher.matches();
+    }
+
+
+
+
+
 }
 
-    private boolean isValidSin(String toString) {
-    }
