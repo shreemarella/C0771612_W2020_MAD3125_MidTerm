@@ -37,7 +37,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
-                    android:text="Tax filing"
+                    android:text="Tax Filing"
                     android:textSize="40dp" />
 
                 <TableRow android:layout_marginTop="10dp">

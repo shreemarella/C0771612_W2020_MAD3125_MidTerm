@@ -247,6 +247,33 @@
                             android:textAlignment="center" />
                     </TableRow>
 
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/provincial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Provincial Tax"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/PT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center" />
+                    </TableRow>
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -273,6 +300,7 @@
                             android:textAlignment="center" />
                     </TableRow>
 
+
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -281,17 +309,17 @@
                         android:layout_marginRight="10dp">
 
                         <TextView
-                            android:id="@+id/provincial"
+                            android:id="@+id/E"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="left"
-                            android:text="Provincial Tax"
+                            android:text="EI"
                             android:textSize="20dp" />
 
                         <TextView
-                            android:id="@+id/PT"
+                            android:id="@+id/EI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -325,31 +353,6 @@
                             android:textAlignment="center" />
                     </TableRow>
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginRight="10dp">
-
-                        <TextView
-                            android:id="@+id/E"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:gravity="left"
-                            android:text="EI"
-                            android:textSize="20dp" />
-
-                        <TextView
-                            android:id="@+id/EI"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="1"
-                            android:textAlignment="center" />
-                    </TableRow>
 
 
                     <TableRow
