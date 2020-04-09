@@ -72,7 +72,30 @@ public class DisplayScreen extends AppCompatActivity
             RRSP.setText(String.format("%.2f", RRSP_C0));
 
         }
-        
+
+        TotalTaxableIncome.setText(String.format("%.2f",TOTALTAXINCOME));
+
+        if( TOTALTAXINCOME >= 220000){
+            Double pt = TOTALTAXINCOME*0.1316;
+            ProvincialTax.setText(String.format("%.2f",pt));
+
+        }else if (( TOTALTAXINCOME >= 150000) &&( TOTALTAXINCOME <= 220000)){
+            Double pt =  TOTALTAXINCOME*0.1216;
+            ProvincialTax.setText(String.format("%.2f",pt));
+        }else if (( TOTALTAXINCOME >= 87813.01) &&( TOTALTAXINCOME <= 150000)){
+            Double pt =  TOTALTAXINCOME*0.1116;
+            ProvincialTax.setText(String.format("%.2f",pt));
+        }else if (( TOTALTAXINCOME >= 43906.01) &&( TOTALTAXINCOME <= 87813)){
+            Double pt =  TOTALTAXINCOME*0.0915;
+            ProvincialTax.setText(String.format("%.2f",pt));
+        }else if (( TOTALTAXINCOME >= 10582.01) &&( TOTALTAXINCOME <= 43906)){
+            Double pt =  TOTALTAXINCOME*0.0505;
+            ProvincialTax.setText(String.format("%.2f",pt));
+        }else if ( TOTALTAXINCOME <= 10582){
+            Double pt =  TOTALTAXINCOME;
+            ProvincialTax.setText(String.format("%.2f",pt));
+        }
+
 
     }
 
