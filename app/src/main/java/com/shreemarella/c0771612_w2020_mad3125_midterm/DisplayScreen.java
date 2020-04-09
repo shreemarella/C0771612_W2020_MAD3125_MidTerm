@@ -59,21 +59,28 @@ public class DisplayScreen extends AppCompatActivity
 
     }
 
-    private Double calcualteCPP(Double gross)
-    {
+    private Double calcualteCPP(Double gross) {
         Double x;
         Double y;
-        if(gross < 57400){
+        if (gross < 57400) {
             x = 57400 - gross;
-            y = 57400 -x;
+            y = 57400 - x;
             x = y * 0.051;
 
-        }else
-        {
+        } else {
             x = gross - 57400;
             y = gross - x;
             x = y * 0.051;
         }
 
         return x;
-}
+    }
+    private Double calculateEI(Double gross){
+        Double x;
+
+        if(gross >= 53100) {
+
+            x = 860.22;
+        }
+
+        }
