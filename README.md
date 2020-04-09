@@ -19,5 +19,7 @@ References:
 
 * https://stackoverflow.com/questions/21148103/android-app-crashes-after-splashscreen
 
+* http://www.java2s.com/Open-Source/Android_Free_Code/calculator/tax/com_agiliq_taxcalcTaxCalculator_java.htm
+
 
 
