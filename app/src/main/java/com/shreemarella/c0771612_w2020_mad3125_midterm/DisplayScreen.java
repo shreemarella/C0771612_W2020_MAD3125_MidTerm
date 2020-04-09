@@ -117,14 +117,14 @@ public class DisplayScreen extends AppCompatActivity
             Double ft =  TOTALTAXINCOME;
             FederalTax.setText(String.format("%.2f",ft));
         }
-//
-//        String value1= ProvincialTax.getText().toString();
-//        Double Finalprovincial =Double.parseDouble(value1);
-//        String value2 = FederalTax.getText().toString();
-//        Double Finalfederal = Double.parseDouble(value2);
-//
-//        Double x = Finalprovincial + Finalfederal;
-//        TotalTaxPaid.setText(x.toString());
+
+        String value1= ProvincialTax.getText().toString();
+        Double Finalprovincial =Double.parseDouble(value1);
+        String value2 = FederalTax.getText().toString();
+        Double Finalfederal = Double.parseDouble(value2);
+
+        Double x = Finalprovincial + Finalfederal;
+        TotalTaxPaid.setText(x.toString());
 
         sinnumber.setText(c2.getSinNo());
         fullname.setText(c2.getLastName().toUpperCase()+" "+c2.getFirstName());

@@ -21,6 +21,8 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@RequiresApi(api = Build.VERSION_CODES.N)
+
 public class DataEntry extends AppCompatActivity
 {
     private TextView FirstName;
@@ -33,11 +35,9 @@ public class DataEntry extends AppCompatActivity
     private TextView TaxDate;
     private TextView GrossPay;
     private TextView RRSP;
-
     private Button Register;
     private Button Clear;
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +82,7 @@ public class DataEntry extends AppCompatActivity
 
 
                 } else {
-                    Age.setText(" Not eligible to file tax for  this  year!");
+                    Age.setText(" Not eligible to file tax");
                     Age.setTextColor(Color.RED);
                     Age.setTypeface(null, Typeface.BOLD);
 
@@ -113,29 +113,29 @@ public class DataEntry extends AppCompatActivity
 
 
                 if ((isValidSin(SINNumber.getText().toString())) == false) {
-                    SINNumber.setError("Not Valid");
+                    SINNumber.setError("Not Valid SIN");
                 }else if (FirstName.getText().toString().matches("")){
-                    FirstName.setError("Enter First name");
+                    FirstName.setError("Enter Your First Name");
 
                 }else if (LastName.getText().toString().matches("")){
-                    LastName.setError("Enter Last name");
+                    LastName.setError("Enter Your Last Name");
 
                 }else if (GrossPay.getText().toString().matches("")){
-                    GrossPay.setError("enter Last name");
+                    GrossPay.setError("enter Your Last Name");
 
                 }else if (RRSP.getText().toString().matches("")){
-                    RRSP.setError("enter Last name");
+                    RRSP.setError("enter Last Name");
                 } else {
                     String value1 = GrossPay.getText().toString();
                     Double GrossValue = Double.parseDouble(value1);
                     String value2 = RRSP.getText().toString();
                     Double RRSPvalue = Double.parseDouble(value2);
 
-//                    SINNumber.setText(SINNumber.getText().toString());
-//                    Intent mintent = new Intent(person_entryscreen.this, Displaying_data.class);
-//                    CRACustomer C1 = new CRACustomer(taxdate.getText().toString(),sinnumber.getText().toString(),firstname.getText().toString(), lastname.getText().toString(), txtDate.getText().toString(), Age.getText().toString(), gender.getSelectedItem().toString(), GrossValue, RRSPvalue);
-//                    mintent.putExtra("object",C1);
-//                    startActivity(mintent);
+                    SINNumber.setText(SINNumber.getText().toString());
+                    Intent mintent = new Intent(DataEntry.this, DisplayScreen.class);
+                    CRACustomer C1 = new CRACustomer(TaxDate.getText().toString(),SINNumber.getText().toString(),FirstName.getText().toString(), LastName.getText().toString(), txtDate.getText().toString(), Age.getText().toString(), Gender.getSelectedItem().toString(), GrossValue, RRSPvalue);
+                    mintent.putExtra("object",C1);
+                    startActivity(mintent);
                 }
             }
         });
