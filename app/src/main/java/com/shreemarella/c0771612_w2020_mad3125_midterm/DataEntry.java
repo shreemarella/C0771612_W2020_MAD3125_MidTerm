@@ -1,11 +1,19 @@
 package com.shreemarella.c0771612_w2020_mad3125_midterm;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
+import android.icu.util.Calendar;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class DataEntry extends AppCompatActivity
 {
@@ -23,6 +31,7 @@ public class DataEntry extends AppCompatActivity
     private Button Register;
     private Button Clear;
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +48,25 @@ public class DataEntry extends AppCompatActivity
         RRSP = findViewById(R.id.RRSP);
         Register =findViewById(R.id.register);
         Clear = findViewById(R.id.btnClear);
-        
+
+
+        final Calendar myCalendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat simpledateformat = new SimpleDateFormat(" EEEE ,dd-mm-yyyy hh:mm:ss a");
+        String dateTime = simpledateformat.format(calendar.getTime());
+        TaxDate.setText("Tax Filing Date: " + dateTime);
+
+        final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                // TODO Auto-generated method stub
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "MM-dd-yy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
     }
 }
