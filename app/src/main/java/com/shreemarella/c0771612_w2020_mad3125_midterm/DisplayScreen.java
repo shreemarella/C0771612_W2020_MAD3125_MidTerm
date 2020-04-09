@@ -81,6 +81,13 @@ public class DisplayScreen extends AppCompatActivity
         if(gross >= 53100) {
 
             x = 860.22;
+        }else{
+
+            x = gross *0.0162;
+
         }
+
+        return x;
+    }
 
         }
