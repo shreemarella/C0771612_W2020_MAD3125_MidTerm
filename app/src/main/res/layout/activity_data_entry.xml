@@ -55,10 +55,10 @@
 
                         <com.google.android.material.textfield.TextInputEditText
 
-                            android:id="@+id/first_name"
+                            android:id="@+id/FirstName"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:hint="first name">
+                            android:hint="First Name">
 
                         </com.google.android.material.textfield.TextInputEditText>
 
@@ -80,7 +80,7 @@
 
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/last_name"
+                            android:id="@+id/LastName"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="last name">
@@ -130,7 +130,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="left"
-                            android:hint=" Click To Enter BirthDate"
+                            android:hint="Enter BirthDate"
                             android:textAlignment="center">
 
                         </com.google.android.material.textview.MaterialTextView>
@@ -156,7 +156,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="AGE"
-                            android:text="AGE:"
+                            android:text="Age:"
                             android:textAlignment="center"
                             android:textSize="20dp" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -218,7 +218,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="sin number"
-                            android:inputType="number"></com.google.android.material.textfield.TextInputEditText>
+                            android:inputType="number">
+
+                        </com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
                 </TableRow>
@@ -264,8 +266,7 @@
                             android:id="@+id/Grossincome"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawableLeft="@mipmap/ic_dollarsymbol"
-                            android:hint="Gross income "
+                            android:hint="Gross Income "
                             android:inputType="numberDecimal" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -290,7 +291,7 @@
                             android:layout_height="match_parent"
                             android:hint="RRSP"
                             android:inputType="numberDecimal">
-                            
+
                         </com.google.android.material.textfield.TextInputEditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
