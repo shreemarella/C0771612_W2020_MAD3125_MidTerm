@@ -15,5 +15,6 @@ References:
 
 * https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout
 
+* https://www.youtube.com/watch?v=WBbsvqSu0is
 
 
