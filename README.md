@@ -7,3 +7,7 @@ References:
 
 * https://www.codeproject.com/Questions/157567/How-to-validate-SiN-Social-Number-using-JavaScript
 
+* https://www.vogella.com/tutorials/AndroidParcelable/article.html
+
+
+
