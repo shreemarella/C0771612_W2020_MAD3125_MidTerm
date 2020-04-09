@@ -89,5 +89,15 @@ public class DisplayScreen extends AppCompatActivity
 
         return x;
     }
+    private Double calculateMaxRrsp(Double gross){
+        Double x;
 
-        }
+        x = gross * 0.18;
+
+        return x;
+
+
+    }
+
+
+}
