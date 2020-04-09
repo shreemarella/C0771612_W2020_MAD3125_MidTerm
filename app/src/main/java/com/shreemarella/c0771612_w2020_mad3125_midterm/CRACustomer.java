@@ -82,91 +82,91 @@ public class CRACustomer implements Parcelable
         }
 
     }
-//    public static final Creator<CRACustomer> CREATOR = new Creator<CRACustomer>() {
-//        @Override
-//        public CRACustomer createFromParcel(Parcel in) {
-//            return new CRACustomer(in);
-//        }
-//
-//        @Override
-//        public CRACustomer[] newArray(int size) {
-//            return new CRACustomer[size];
-//        }
-//    };
-//
-//    public String getCurrentDate() {
-//        return currentDate;
-//    }
-//
-//    public void setCurrentDate(String currentDate) {
-//        this.currentDate = currentDate;
-//    }
-//
-//    public String getSinNo() {
-//        return sinNo;
-//    }
-//
-//    public void setSinNo(String sinNo) {
-//        this.sinNo = sinNo;
-//    }
-//
-//    public String getFirstName() {
-//        return firstName;
-//    }
-//
-//    public void setFirstName(String firstName) {
-//        this.firstName = firstName;
-//    }
-//
-//    public String getLastName() {
-//        return lastName;
-//    }
-//
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
-//
-//    public String getBirthdate() {
-//        return Birthdate;
-//    }
-//
-//    public void setBirthdate(String birthdate) {
-//        Birthdate = birthdate;
-//    }
-//
-//    public String getAge() {
-//        return age;
-//    }
-//
-//    public void setAge(String age) {
-//        this.age = age;
-//    }
-//
-//    public String getGender() {
-//        return Gender;
-//    }
-//
-//    public void setGender(String gender) {
-//        Gender = gender;
-//    }
-//
-//    public Double getGrossIncome() {
-//        return GrossIncome;
-//    }
-//
-//    public void setGrossIncome(Double grossIncome) {
-//        GrossIncome = grossIncome;
-//    }
-//
-//    public Double getRRSP() {
-//        return RRSP;
-//    }
-//
-//    public void setRRSP(Double RRSP) {
-//        this.RRSP = RRSP;
-//    }
-//
-//    public static Creator<CRACustomer> getCREATOR() {
-//        return CREATOR;
-//    }
+    public static final Creator<CRACustomer> CREATOR = new Creator<CRACustomer>() {
+        @Override
+        public CRACustomer createFromParcel(Parcel in) {
+            return new CRACustomer(in);
+        }
+
+        @Override
+        public CRACustomer[] newArray(int size) {
+            return new CRACustomer[size];
+        }
+    };
+
+    public String getCurrentDate() {
+        return currentDate;
+    }
+
+    public void setCurrentDate(String currentDate) {
+        this.currentDate = currentDate;
+    }
+
+    public String getSinNo() {
+        return sinNo;
+    }
+
+    public void setSinNo(String sinNo) {
+        this.sinNo = sinNo;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getBirthdate() {
+        return Birthdate;
+    }
+
+    public void setBirthdate(String birthdate) {
+        Birthdate = birthdate;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String gender) {
+        Gender = gender;
+    }
+
+    public Double getGrossIncome() {
+        return GrossIncome;
+    }
+
+    public void setGrossIncome(Double grossIncome) {
+        GrossIncome = grossIncome;
+    }
+
+    public Double getRRSP() {
+        return RRSP;
+    }
+
+    public void setRRSP(Double RRSP) {
+        this.RRSP = RRSP;
+    }
+
+    public static Creator<CRACustomer> getCREATOR() {
+        return CREATOR;
+    }
 }
