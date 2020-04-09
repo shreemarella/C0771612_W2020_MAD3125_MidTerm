@@ -103,8 +103,31 @@ public class DataEntry extends AppCompatActivity
 
         });
 
+        Register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                if ((isValidSin(SINNumber.getText().toString())) == false) {
+                    SINNumber.setError("Not Valid");
+                }else if (FirstName.getText().toString().matches("")){
+                    FirstName.setError("Enter First name");
+
+                }else if (LastName.getText().toString().matches("")){
+                    LastName.setError("Enter Last name");
+
+                }else if (GrossPay.getText().toString().matches("")){
+                    GrossPay.setError("enter Last name");
+
+                }else if (RRSP.getText().toString().matches("")){
+                    RRSP.setError("enter Last name");
+
 
 
 
     }
 }
+
+    private boolean isValidSin(String toString) {
+    }
