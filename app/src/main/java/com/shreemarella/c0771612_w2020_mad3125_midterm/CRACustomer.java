@@ -54,34 +54,34 @@ public class CRACustomer implements Parcelable
         this.RRSP = RRSP;
     }
 
-//    @Override
-//    public int describeContents() {
-//        return 0;
-//    }
-//
-//    @Override
-//    public void writeToParcel(Parcel dest, int flags) {
-//        dest.writeString(currentDate);
-//        dest.writeString(sinNo);
-//        dest.writeString(firstName);
-//        dest.writeString(lastName);
-//        dest.writeString(Birthdate);
-//        dest.writeString(age);
-//        dest.writeString(Gender);
-//        if (GrossIncome == null) {
-//            dest.writeByte((byte) 0);
-//        } else {
-//            dest.writeByte((byte) 1);
-//            dest.writeDouble(GrossIncome);
-//        }
-//        if (RRSP == null) {
-//            dest.writeByte((byte) 0);
-//        } else {
-//            dest.writeByte((byte) 1);
-//            dest.writeDouble(RRSP);
-//        }
-//
-//    }
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(currentDate);
+        dest.writeString(sinNo);
+        dest.writeString(firstName);
+        dest.writeString(lastName);
+        dest.writeString(Birthdate);
+        dest.writeString(age);
+        dest.writeString(Gender);
+        if (GrossIncome == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(GrossIncome);
+        }
+        if (RRSP == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(RRSP);
+        }
+
+    }
 //    public static final Creator<CRACustomer> CREATOR = new Creator<CRACustomer>() {
 //        @Override
 //        public CRACustomer createFromParcel(Parcel in) {
