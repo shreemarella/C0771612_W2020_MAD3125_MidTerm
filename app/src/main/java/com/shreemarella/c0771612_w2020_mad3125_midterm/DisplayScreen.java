@@ -69,7 +69,7 @@ public class DisplayScreen extends AppCompatActivity
             double x = calculateMaxRrsp(gross) - RRSP_C0;
             CFRSSP.setText(String.format("%.2f",x));
             CFRSSP.setTextColor(Color.RED);
-            RRSP.setText(String.format("%.2f", RRSP_C0));
+            RRSP.setText(String.format("%.2f\", RRSP_C0"));
 
         }
 

@@ -121,10 +121,10 @@ public class DataEntry extends AppCompatActivity
                     LastName.setError("Enter Your Last Name");
 
                 }else if (GrossPay.getText().toString().matches("")){
-                    GrossPay.setError("enter Your Last Name");
+                    GrossPay.setError("Enter Your Last Name");
 
                 }else if (RRSP.getText().toString().matches("")){
-                    RRSP.setError("enter Last Name");
+                    RRSP.setError("Enter Last Name");
                 } else {
                     String value1 = GrossPay.getText().toString();
                     Double GrossValue = Double.parseDouble(value1);
