@@ -152,15 +152,6 @@ public class DisplayScreen extends AppCompatActivity
 
         return x;
     }
-    private Double calculateMaxRrsp(Double gross){
-        Double x;
-
-        x = gross * 0.18;
-
-        return x;
-
-
-    }
     private Double calculateEI(Double gross){
         Double x;
 
@@ -175,6 +166,17 @@ public class DisplayScreen extends AppCompatActivity
 
         return x;
     }
+    
+    private Double calculateMaxRrsp(Double gross){
+        Double x;
+
+        x = gross * 0.18;
+
+        return x;
+
+
+    }
+
 
 
 

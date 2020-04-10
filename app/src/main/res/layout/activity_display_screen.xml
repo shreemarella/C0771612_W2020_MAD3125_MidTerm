@@ -53,7 +53,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Full Name"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/full_name"
@@ -79,7 +80,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Birthdate"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/BirthD"
@@ -105,7 +107,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Age"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/age"
@@ -131,7 +134,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Gender"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/GN"
@@ -157,7 +161,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="SinNumber"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/SiN"
@@ -183,7 +188,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="currentdate"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/CuDa"
@@ -210,7 +216,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Gross Income"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/GI"
@@ -236,7 +243,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="RRSP"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/RP"
@@ -264,7 +272,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Provincial Tax"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/PT"
@@ -289,7 +298,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Fedaral Tax"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/FT"
@@ -316,7 +326,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="EI"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/EI"
@@ -342,7 +353,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="CPP"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/cp"
@@ -370,7 +382,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="CFRRSP"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/CRP"
@@ -396,7 +409,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Total Taxable Income"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/TI"
@@ -422,7 +436,8 @@
                             android:layout_weight="1"
                             android:gravity="left"
                             android:text="Total Tax Paid"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/TTPe"
