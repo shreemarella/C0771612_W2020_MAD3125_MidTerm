@@ -38,7 +38,9 @@
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
                     android:text="Tax Filing"
-                    android:textSize="40dp" />
+                    android:textAlignment="center"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
 
                 <TableRow android:layout_marginTop="10dp">
 
