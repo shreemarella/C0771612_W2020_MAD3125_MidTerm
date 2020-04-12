@@ -1,11 +1,17 @@
-# C0771612_W2020_MAD3125_MidTerm Shree Marella - C0771612
+# C0771612_W2020_MAD3125_MidTerm
 
+## Shree Marella - C0771612
 
-final output SS File attached 
+Tax Calculator application consists of three screens 
+1) splash activity - opening screen with application and student details  
+2) Data Entry Activity - data entry screen for customer to enter his details like SIN,name,Income,RRSP,DOB
+3) Display Screen Activity - Final Screen to Display all the Details after calculating Tax As per the details entered by the customer
 
-* 
+Detailed Explination of the screens and feilds is clearly mentioned on the Docx file which is attached 
 
-References:
+**final output SS File attached** 
+
+**References:**
 
 * https://stackoverflow.com/questions/38967422/calculate-age-from-birthdate
 
