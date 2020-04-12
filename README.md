@@ -9,7 +9,7 @@ Tax Calculator application consists of three screens
 
 Detailed Explination of the screens and feilds is clearly mentioned on the Docx file which is attached 
 
-**final output SS File attached** 
+* **Final Output SS File Attached** 
 
 **References:**
 
