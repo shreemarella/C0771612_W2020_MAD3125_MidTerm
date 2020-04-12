@@ -1,6 +1,6 @@
 # C0771612_W2020_MAD3125_MidTerm
 
-## Shree Marella - C0771612
+## Shree Marella
 
 Tax Calculator application consists of three screens 
 1) splash activity - opening screen with application and student details  
